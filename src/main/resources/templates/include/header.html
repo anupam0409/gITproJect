@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" lang="en">
+<header class="site-navbar js-sticky-header site-navbar-target"
+	role="banner">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-6 col-lg-2">
+				<div class="row row-one" style="margin-top: 30px;">
+					<img src="img/git.png" alt="Image"
+						class="img-fluid rounded-circle mb-6" height="40" width="40">&nbsp;&nbsp;
+					<h1 class="mb-0 site-logo" style="position: relative;">
+						<a href="/home" class="mb-0">gITproJect</a>
+					</h1>
+				</div>
+			</div>
+			<div class="col-12 col-md-10 d-none d-lg-block">
+				<nav class="site-navigation position-relative text-right"
+					role="navigation">
+
+					<ul
+						class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+						<li><a href="/getall" class="nav-link"></a></li>
+						<li><a href="/pricing" class="nav-link">Membership</a></li>
+
+						<li class="has-children"><a href="/blog" class="nav-link">Pricing</a>
+							<ul class="dropdown">
+								<li><a href="/blog" class="nav-link">Product</a></li>
+								<li><a href="/blog" class="nav-link">Services</a></li>
+							</ul></li>
+						<li><a href="/contact" class="nav-link">Contact</a></li>
+						<li><a href="/signup" class="nav-link">SignUp</a></li>
+						<li class="has-children" th:if="${session.userName}!= null"><a
+							href="/viewprofile" class="nav-link"
+							th:text="'Hi '+${session.userName}"></a>
+							<ul class="dropdown">
+								<li><a href="/notification" class="nav-link">Notification</a></li>
+								<li><a href="/logout" class="nav-link">Logout</a></li>
+							</ul></li>
+						<li th:if="${session.userName}== null"><a href="/login"
+							class="nav-link">Login</a></li>
+
+						<li><form action="/addproject">
+								<input type="submit" class="btn btn-primary w-100"
+									value="+ SUBMIT A PROJECT">
+							</form></li>
+
+					</ul>
+				</nav>
+			</div>
+
+
+			<div class="col-6 d-inline-block d-lg-none ml-md-0 py-3"
+				style="position: relative; top: 3px;">
+
+				<a href="#" class="burger site-menu-toggle js-menu-toggle"
+					data-toggle="collapse" data-target="#main-navbar"> <span></span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+</header>
+</html>

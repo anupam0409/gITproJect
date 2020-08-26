@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="utf-8">
+<title>gITproJect | Projects</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
+
+<!-- Favicons -->
+<link href="img/git.png" rel="icon">
+<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Poppins:300,400,700|Roboto:300,400,700&display=swap"
+	rel="stylesheet">
+
+<!-- Bootstrap CSS File -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+<link href="vendor/line-awesome/css/line-awesome.min.css"
+	rel="stylesheet">
+<link href="vendor/aos/aos.css" rel="stylesheet">
+<link href="vendor/owlcarousel/assets/owl.carousel.min.css"
+	rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="site-wrap">
+
+		<div class="site-mobile-menu site-navbar-target">
+			<div class="site-mobile-menu-header">
+				<div class="site-mobile-menu-close mt-3">
+					<span class="icofont-close js-menu-toggle"></span>
+				</div>
+			</div>
+			<div class="site-mobile-menu-body"></div>
+		</div>
+
+		<div th:include="./include/header.html"></div>
+
+		<main id="main">
+			<div class="hero-section inner-page">
+				<div class="wave">
+
+					<svg width="1920px" height="265px" viewBox="0 0 1920 265"
+						version="1.1" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+							fill-rule="evenodd">
+                  <g id="Apple-TV"
+							transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
+                      <path
+							d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,667 L1017.15166,667 L0,667 L0,439.134243 Z"
+							id="Path"></path>
+                  </g>
+              </g>
+          </svg>
+
+				</div>
+
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12">
+							<div class="row justify-content-center">
+								<div class="col-md-7 text-center hero-text">
+									<h2 data-aos="fade-up" data-aos-delay="">Java gITproJect</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<div class="site-section pb-0">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6 mr-auto">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h4 class="mb-0">
+											<button onclick="showHideDiv('close1')" class="btn btn-light"
+												type="button" data-toggle="collapse"
+												data-target="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">Project 1</button>
+											<button id="close1" onclick="showHideDiv('close1')"
+												style="display: none;" class="close" aria-label="Close"
+												type="button" data-toggle="collapse"
+												data-target="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</h4>
+									</div>
+
+									<div id="collapseOne" class="collapse"
+										aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div class="card-body">Description and links 1</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingTwo">
+										<h4 class="mb-0" style="display: inline;">
+											<button onclick="showHideDiv('close2')" class="btn btn-light"
+												type="button" data-toggle="collapse"
+												data-target="#collapseTwo" aria-expanded="true"
+												aria-controls="collapseTwo">Project 2</button>
+											<button id="close2" onclick="showHideDiv('close2')"
+												style="display: none;" class="close" aria-label="Close"
+												type="button" data-toggle="collapse"
+												data-target="#collapseTwo" aria-expanded="true"
+												aria-controls="collapseTwo">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</h4>
+									</div>
+									<div id="collapseTwo" class="collapse"
+										aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div class="card-body">Description and links 2</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingThree">
+										<h4 class="mb-0">
+											<button onclick="showHideDiv('close3')" class="btn btn-light"
+												type="button" data-toggle="collapse"
+												data-target="#collapseThree" aria-expanded="true"
+												aria-controls="collapseThree">Project 3</button>
+											<button id="close3" onclick="showHideDiv('close3')"
+												style="display: none;" class="close" aria-label="Close"
+												type="button" data-toggle="collapse"
+												data-target="#collapseThree" aria-expanded="true"
+												aria-controls="collapseThree">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</h4>
+									</div>
+									<div id="collapseThree" class="collapse"
+										aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div class="card-body">Dexcription and links 3</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4" data-aos="fade-left">
+							<div class="collapse" id="collapseOne"
+								aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card card-body">
+									<img src="img/busticket.png" alt="Image" class="img-fluid">
+								</div>
+							</div>
+							<div class="collapse" id="collapseTwo"
+								aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card card-body">
+									<img src="img/user.png" alt="Image" class="img-fluid">
+								</div>
+							</div>
+							<div class="collapse" id="collapseThree"
+								aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card card-body">
+									<img src="img/busticket.png" alt="Image" class="img-fluid">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .site-section -->
+		</main>
+		<div th:include="./include/footer.html"></div>
+
+	</div>
+	<!-- .site-wrap -->
+
+	<!-- Vendor JS Files -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/easing/easing.min.js"></script>
+	<script src="vendor/php-email-form/validate.js"></script>
+	<script src="vendor/sticky/sticky.js"></script>
+	<script src="vendor/aos/aos.js"></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		function showHideDiv(ele) {
+			var srcElement = document.getElementById(ele);
+			if (srcElement != null) {
+				if (srcElement.style.display == "block") {
+					srcElement.style.display = 'none';
+				} else {
+					srcElement.style.display = 'block';
+				}
+				return false;
+			}
+		}
+	</script>
+
+</body>
+</html>
